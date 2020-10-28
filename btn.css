@@ -15,7 +15,7 @@ html {
   background-color: orange;
   margin: 1rem auto;
   font-size: 4rem;
-  border-radius: 10%;
+  border-radius: 20%;
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
