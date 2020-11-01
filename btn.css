@@ -11,24 +11,33 @@ html {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
-  background-color: orange;
+  padding: 2rem 4rem;
+  background-color: green;
   margin: 1rem auto;
-  font-size: 4rem;
-  border-radius: 20%;
+  font-size: 2rem;
+  border-radius: 20rem;
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
 }
 
-.btn-orange {
-  background-color: orange;
+.btn-green {
+  background-color: green;
+  color: #000000;
+}
+
+.btn-green::after {
+  background-color: green;
   color: #000000;
 }
 
 .btn:hover {
   background-color: black;
-  color: orange;
+  color: green;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .bttn::after {
@@ -36,10 +45,21 @@ html {
   display: inline;
   height: 100%;
   width: 100%;
-  border-radius: 10rem;
+  border-radius: 20rem;
   position: absolute;
   top: 0;
   left: 9;
-  all: 0.2s;
+  z-index: -1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bttn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transform: scaleX(1.5) scaleY(1.6);
+          transform: scaleX(1.5) scaleY(1.6);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=btn.css.map */

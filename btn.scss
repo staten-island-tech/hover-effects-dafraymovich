@@ -5,23 +5,30 @@
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
-    background-color: orange;
+    padding: 2rem 4rem;
+    background-color: green;
     margin: 1rem auto;
-    font-size: 4rem;
-    border-radius: 20%;
+    font-size: 2rem;
+    border-radius: 20rem;
     transition: all .2s;
     position: relative;
     //border-radius not working? ask in class//
 }
 
-.btn-orange{
-    background-color: orange;
-    color: #000000
+.btn-green{
+    background-color: green;
+    color: #000000;
+
+}
+.btn-green::after{
+    background-color: green;
+    color: #000000;
 }
 .btn:hover{
     background-color: black;
-    color: orange;
+    color:green;
+    transform: translateY(-2px);
+    box-shadow: 0 10px .5rem rgba($color: #000000, $alpha: .2);
 
     
 }
@@ -30,10 +37,18 @@
     display: inline;
     height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius:20rem;
     position: absolute;
     top: 0;
     left: 9;
-    all: 0.2s
+    z-index: -1;
+    transition:all 0.2s;
 
+
+}
+
+.bttn:active{
+    transform: translateY(-1px);
+    transform: scaleX(1.5) scaleY(1.6);
+    box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
 }

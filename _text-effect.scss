@@ -1,0 +1,14 @@
+@import"variables.scss";
+.text-effect {
+    background-image: url("./media/fire.jpg");
+    background-position: center;
+    color: transparent;
+    font-size: 6rem;
+    -webkit-background-clip: text;
+    transition: all .2s
+
+}
+.text-effect:hover {
+    transform: skewY(10deg);
+    letter-spacing: 1rem;
+}
