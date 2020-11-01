@@ -115,8 +115,8 @@ html {
 }
 
 .text-effect:hover {
-  -webkit-transform: skewY(10deg);
-          transform: skewY(10deg);
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
   letter-spacing: 1rem;
 }
 
