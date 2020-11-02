@@ -181,6 +181,51 @@ html {
   left: 30%;
 }
 
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.explore {
+  height: 30rem;
+  position: relative;
+}
+
+.explore-picture {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.explore-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+.explore:hover .explore-picture {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.explore:hover .explore-header {
+  opacity: 1;
+  top: 50%;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
