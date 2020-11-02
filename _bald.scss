@@ -1,0 +1,41 @@
+@import"variables.scss";
+.bald-parent {
+    width: 60rem;
+    height: 40rem;
+    
+}
+.bald-gallery {
+    margin: 3rem;
+    position: relative;
+}
+.bald-photo {
+    position: absolute;
+    height: 20rem;
+    box-shadow: 0 1.5rem 1rem rgba(0,0,0,0.4);
+    outline-offset: 1rem;
+    transition: all .3s;
+}
+.bald-photo:hover {
+    transform: scale(1.3);
+    box-shadow: 0 3rem 1rem rgba(0,0,0,0.4);
+    outline: .5rem solid rgb(87, 201, 76);
+    z-index: 3;
+    filter: saturate(150%);
+}
+.bald-gallery:hover .bald-photo:not(:hover){
+    transform: scale(.5);
+    filter: grayscale(300%);
+}
+
+.bald-photo-2 {
+    top: 2rem;
+    right:0;
+}
+.bald-photo-3 {
+    top: -2rem;
+    left: 0;
+}
+.bald-photo-1 {
+    top: 10rem;
+    left: 30%;
+}
